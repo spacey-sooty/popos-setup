@@ -1,0 +1,6 @@
+[Microsoft Surface Laptop Studio Touchpad]
+MatchVendor=0x045E
+MatchProduct=0x09AF
+MatchUdevType=touchpad
+AttrPressureRange=25:10
+AttrPalmPressureThreshold=500

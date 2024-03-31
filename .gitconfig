@@ -1,0 +1,11 @@
+[user]
+	name = Isaac Turner
+	email = spacey_sooty@outlook.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master
+[alias]
+    ac = commit -am
+[pull]
+	rebase = true
