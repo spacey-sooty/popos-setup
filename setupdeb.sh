@@ -2,6 +2,7 @@ ln -s $(pwd)/.gitconfig ~/.gitconfig
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo "set -o vi" >> ~/.bashrc
 
+./node.sh
 ./bravedeb.sh
 ./discordeb.sh
 ./spotifydeb.sh
