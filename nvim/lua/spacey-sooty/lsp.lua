@@ -12,6 +12,7 @@ lspconfig.tsserver.setup({})
 lspconfig.clangd.setup({})
 lspconfig.jdtls.setup({})
 lspconfig.dartls.setup({})
+lspconfig.csharp_ls.setup({})
 
 
 -- Global mappings.

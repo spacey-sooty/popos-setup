@@ -14,4 +14,6 @@ echo "set -o vi" >> ~/.bashrc
 sudo apt install ripgrep
 sudo apt update
 sudo apt upgrade
+sudo apt remove --purge "libreoffice*"
+sudo apt clean
 sudo apt autoremove
