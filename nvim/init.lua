@@ -1,1 +1,1 @@
-require('spacey-sooty')
+require('isaac')
