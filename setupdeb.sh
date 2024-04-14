@@ -1,6 +1,7 @@
 ln -s $(pwd)/.gitconfig ~/.gitconfig
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo "set -o vi" >> ~/.bashrc
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
 ./node.sh
 ./bravedeb.sh

@@ -5,6 +5,22 @@ local cmp = require('cmp')
 
 lspconfig.clangd.setup({
     capabilities = capabilities,
+    single_file_support = true,
+})
+
+lspconfig.cssls.setup({
+    capabilities = capabilities,
+    single_file_support = true,
+})
+
+lspconfig.hls.setup({
+    capabilities = capabilities,
+    single_file_support = true,
+})
+
+lspconfig.tsserver.setup({
+    capabilities = capabilities,
+    single_file_support = true,
 })
 
 lspconfig.rust_analyzer.setup({
@@ -12,6 +28,7 @@ lspconfig.rust_analyzer.setup({
         ['rust-analyzer'] = {},
     },
     capabilities = capabilities,
+    single_file_support = true,
 })
 
 lspconfig.lua_ls.setup({
@@ -32,6 +49,7 @@ lspconfig.lua_ls.setup({
         },
     },
     capabilities = capabilities,
+    single_file_support = true,
 })
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)

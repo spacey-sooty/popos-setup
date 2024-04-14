@@ -30,19 +30,13 @@ local plugins = {
     },
     {
         "nvim-treesitter/nvim-treesitter",
-        name = "treesitter",
         run = ':TSUpdate',
     },
     {
         "williamboman/mason.nvim",
-        name = "mason",
         config = function()
             require("mason").setup()
         end
-    },
-    {
-        "neovim/nvim-lspconfig",
-        name = "lspconfig",
     },
     {
         'nvim-telescope/telescope.nvim',
@@ -54,12 +48,12 @@ local plugins = {
             },
         }
     },
+    "neovim/nvim-lspconfig",
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',
     'saadparwaiz1/cmp_luasnip',
     'L3MON4D3/LuaSnip',
     'christoomey/vim-tmux-navigator',
-
 }
 
 local opts = {}

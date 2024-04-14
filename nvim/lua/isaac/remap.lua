@@ -23,6 +23,7 @@ vim.keymap.set('n', '<leader>ph', builtin.help_tags, {})
 
 vim.keymap.set('n', '<leader>ps', telescopeconf.project_grep, {})
 vim.keymap.set('n', '<leader>pq', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>pq', builtin.live_grep, {})
 
 vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
 vim.keymap.set("n", "<leader>;", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
