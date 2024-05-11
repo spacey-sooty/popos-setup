@@ -9,6 +9,8 @@ vim.keymap.set("n", "<leader><leader>x", function()
     vim.cmd.so("%")
 end, {})
 
+vim.keymap.set('n', '<C-b>', '<CMD>BlameToggle<cr>', {})
+
 vim.keymap.set('n', '<C-j>', '<CMD>TmuxNavigateDown<cr>')
 vim.keymap.set('n', '<C-k>', '<CMD>TmuxNavigateUp<cr>')
 vim.keymap.set('n', '<C-h>', '<CMD>TmuxNavigateLeft<cr>')
@@ -22,7 +24,6 @@ vim.keymap.set('n', '<leader>pd', builtin.diagnostics, {})
 vim.keymap.set('n', '<leader>ph', builtin.help_tags, {})
 
 vim.keymap.set('n', '<leader>ps', telescopeconf.project_grep, {})
-vim.keymap.set('n', '<leader>pq', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>pq', builtin.live_grep, {})
 
 vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)

@@ -21,6 +21,15 @@ local plugins = {
         end
     },
     {
+        "mfussenegger/nvim-jdtls",
+    },
+    {
+      "FabijanZulj/blame.nvim",
+      config = function()
+        require("blame").setup()
+      end
+    },
+    {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" },
@@ -52,7 +61,10 @@ local plugins = {
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',
     'saadparwaiz1/cmp_luasnip',
-    'L3MON4D3/LuaSnip',
+    {
+        "L3MON4D3/LuaSnip",
+        version = "v2.*",
+    },
     'christoomey/vim-tmux-navigator',
 }
 

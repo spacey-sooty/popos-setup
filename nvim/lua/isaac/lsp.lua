@@ -8,6 +8,11 @@ lspconfig.clangd.setup({
     single_file_support = true,
 })
 
+lspconfig.dartls.setup({
+    capabilities = capabilities,
+    single_file_support = true,
+})
+
 lspconfig.cssls.setup({
     capabilities = capabilities,
     single_file_support = true,
@@ -19,6 +24,23 @@ lspconfig.hls.setup({
 })
 
 lspconfig.tsserver.setup({
+    capabilities = capabilities,
+    single_file_support = true,
+})
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    pattern = "java",
+    callback = function()
+        local jdtls = require("jdtls");
+        jdtls.start_or_attach({
+            capabilities = capabilities,
+            cmd = { vim.fn.expand("~/.local/share/nvim/mason/bin/jdtls") },
+            root_dir = jdtls.setup.find_root({ "java-workspace" }),
+        })
+    end
+})
+
+lspconfig.zls.setup({
     capabilities = capabilities,
     single_file_support = true,
 })
