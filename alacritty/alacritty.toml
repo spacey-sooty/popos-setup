@@ -1,5 +1,6 @@
 import = [
-	"~/.config/alacritty/catppuccin_mocha.toml"
+	# "~/.config/alacritty/catppuccin_mocha.toml"
+    "~/.config/alacritty/rose-pine.toml"
 ]
 
 [window]

@@ -5,5 +5,6 @@ curl https://raw.githubusercontent.com/alacritty/alacritty/master/extra/linux/Al
 sudo desktop-file-install Alacritty.desktop
 rm Alacritty.desktop
 mkdir -p ~/.config/alacritty/
-curl https://raw.githubusercontent.com/catppuccin/alacritty/main/catppuccin-mocha.toml >> ~/.config/alacritty/catppuccin_mocha.toml
+# curl https://raw.githubusercontent.com/catppuccin/alacritty/main/catppuccin-mocha.toml >> ~/.config/alacritty/catppuccin_mocha.toml
+curl https://raw.githubusercontent.com/rose-pine/alacritty/main/dist/rose-pine.toml >> ~/.config/alacritty/rose-pine.toml
 ln -s $(pwd)/alacritty/alacritty.toml ~/.alacritty.toml
